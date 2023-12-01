@@ -124,6 +124,11 @@
   /* grid-area: 1/2/2/3; */
 }
 
+.nav ul li {
+  display: grid;
+  grid-area: 2/2/3/3;
+}
+
 .menu{
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
