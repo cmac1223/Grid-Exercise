@@ -104,37 +104,47 @@
 /* row start / column start / row end / column end */
 .container {
   display: grid;
-  grid-template-columns: 200px 1200px;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 300px 1600px;
+  grid-template-rows: 100px 65px 100px 650px 65px;
 }
 
 .article {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 10px;
+  grid-area: 3/2/5/3;
 }
 
 .header {
   display: grid;
-  grid-template-columns: 300px 900px;
+  grid-template-columns: 300px 1600px;
   grid-area: 1/1/2/3;
   justify-content: space-between;
   align-items: center;
-  /* grid-area: 1/2/2/3; */
 }
 
-.nav ul li {
+.menu>ul {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  list-style-type: none;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 200px;
+  grid-area: 2/1/6/2;
+}
+
+.nav {
   display: grid;
   grid-area: 2/2/3/3;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu{
+.nav ul {
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
-}
-.menu > ul{
-  display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-columns: 400px 400px 400px;
   list-style-type: none;
 }
