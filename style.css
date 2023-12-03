@@ -104,8 +104,9 @@
 /* row start / column start / row end / column end */
 .container {
   display: grid;
-  grid-template-columns: 300px 1600px;
-  grid-template-rows: 100px 65px 100px 650px 65px;
+  grid-template-columns: 400px 1500px;
+  grid-template-rows: 90px 50px 700px 50px;
+  gap: 5px;
 }
 
 .article {
@@ -118,7 +119,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 300px 1600px;
+  grid-template-columns: 300px 1200px;
   grid-area: 1/1/2/3;
   justify-content: space-between;
   align-items: center;
@@ -126,14 +127,20 @@
 
 .menu>ul {
   display: grid;
-  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-columns: 300px 300px 300px 300px;
   list-style-type: none;
+}
+.menu>ul>li {
+  display: grid;
+  /* justify-content: end; */
+
 }
 
 .sidebar {
   display: grid;
   grid-template-rows: 200px;
-  grid-area: 2/1/6/2;
+  grid-area: 2/1/5/2;
+  gap: 5px;
 }
 
 .nav {
@@ -147,4 +154,14 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   list-style-type: none;
+}
+
+.article {
+  display: grid;
+  grid-area: 3/2/5/3;
+}
+
+.footer{
+  display: grid;
+  grid-area: 5/1/6/3;
 }
